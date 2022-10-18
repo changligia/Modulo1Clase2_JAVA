@@ -81,24 +81,25 @@ public class Ejercicio1M1C2 {
     }
 
     static void sumar(int x, int y) {
-        System.out.print("La suma es: " + (x + y));
+        System.out.printf("La suma es: %d\n ", (x + y));
     }
 
     static void restar(int x, int y) {
-        System.out.print("La resta es: " + (x - y));
+        System.out.printf("La resta es: %d\n ", (x - y));
     }
 
     static void multiplicar(int x, int y) {
-        System.out.print("La multiplicación es: " + (x * y));
+        System.out.printf("La multiplicación es: %d\n ", (x * y));
     }
 
     static void dividir(int x, int y) {
-        System.out.print("La división es: " + +(x / y));
+        System.out.printf("La división es: %d\n ", (x / y));
     }
 
     static void imprimirNumerosEntreEllos(int x, int y) {
+        System.out.printf("Los numeros entre %d y %d son: ", x, y);
         for (var i = x; i <= y; i++) {
-            System.out.println("Los numeros entre: " + x + " " + "y" + " " + y + " " + "son: " + i);
+            System.out.println(i);
         }
     }
 }

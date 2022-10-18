@@ -21,7 +21,7 @@ public class Ejercicio2M1C2 {
 
     static void imprimirMultiplosGeneralizados(int x, int y) {
         System.out.println("El resultado es: ");
-        for (int i = y; i <= x; i++) {
+        for (var i = y; i <= x; i++) {
             if (i % y == 0) {
                 System.out.print(i + " ");
             }

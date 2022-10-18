@@ -61,7 +61,6 @@ public class Ejercicio4M1C2 {
         var suma = 0;
         for (var numeroInteger : listaInteger) {
             suma += numeroInteger;
-            System.out.println(numeroInteger);
         }
         System.out.print("La suma es: " + suma);
     }
@@ -70,7 +69,6 @@ public class Ejercicio4M1C2 {
         var multiplicar = 1;
         for (var numeroInteger : listaInteger) {
             multiplicar *= numeroInteger;
-            System.out.println(numeroInteger);
         }
         System.out.print("La multiplicación es: " + multiplicar);
     }
@@ -83,7 +81,7 @@ public class Ejercicio4M1C2 {
 
     static void mostrarTamLista(List<Integer> listaInteger) {
         var tamLista = listaInteger.size();
-        System.out.println("La longitud de la lista es: " + tamLista);
+        System.out.printf("La longitud de la lista es:  %d", tamLista);
     }
 }
 
