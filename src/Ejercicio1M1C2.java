@@ -52,7 +52,6 @@ public class Ejercicio1M1C2 {
                 dividir(x, y);
                 break;
             case "G":
-                System.out.println("Los numeros entre: " + x + " " + "y" + " " + y + " " + "son: ");
                 imprimirNumerosEntreEllos(x, y);
                 break;
             default:
@@ -62,11 +61,13 @@ public class Ejercicio1M1C2 {
     }
 
     static void imprimirMayor(int x, int y) {
-        System.out.print("El mayor de los numeros entre: " + x + " " + "y" + " " + y + " " + "es: " + y);
+        if (x > y)
+            System.out.printf("El mayor de los numeros entre: %d y %d es", x);
     }
 
     static void imprimirMenor(int x, int y) {
-        System.out.print("El menor de los numeros entre: " + x + " " + "y" + " " + y + " " + "es: " + x);
+        if (x < y)
+            System.out.printf("El menor de los numeros entre: %d y %d es", x);
     }
 
     static void sumar(int x, int y) {
@@ -74,20 +75,21 @@ public class Ejercicio1M1C2 {
     }
 
     static void restar(int x, int y) {
-        System.out.print("La resta es: ");
+        System.out.print("La resta es: " + (x - y));
     }
 
     static void multiplicar(int x, int y) {
-        System.out.print("La multiplicación es: ");
+        System.out.print("La multiplicación es: " + (x * y));
     }
 
     static void dividir(int x, int y) {
-        System.out.print("La división es: ");
+        System.out.print("La división es: " + (x / y));
     }
 
     static void imprimirNumerosEntreEllos(int x, int y) {
         for (var i = x; i <= y; i++) {
             System.out.println(i);
+            System.out.println("Los numeros entre: " + x + " " + "y" + " " + y + " " + "son: ");
         }
     }
 }
