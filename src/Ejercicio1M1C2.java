@@ -61,13 +61,23 @@ public class Ejercicio1M1C2 {
     }
 
     static void imprimirMayor(int x, int y) {
-        if (x > y)
-            System.out.printf("El mayor de los numeros entre: %d y %d es", x);
+        int numMayor;
+        if (x > y) {
+            numMayor = x;
+        } else {
+            numMayor = y;
+        }
+        System.out.printf("El mayor de los números entre %d y %d es:  %d", x, y, numMayor);
     }
 
     static void imprimirMenor(int x, int y) {
-        if (x < y)
-            System.out.printf("El menor de los numeros entre: %d y %d es", x);
+        int numMenor;
+        if (x < y) {
+            numMenor = x;
+        } else {
+            numMenor = y;
+        }
+        System.out.printf("El menor de los números entre %d y %d es:  %d", x, y, numMenor);
     }
 
     static void sumar(int x, int y) {
@@ -83,13 +93,13 @@ public class Ejercicio1M1C2 {
     }
 
     static void dividir(int x, int y) {
-        System.out.print("La división es: " + (x / y));
+        System.out.print("La división es: " + +(x / y));
     }
 
     static void imprimirNumerosEntreEllos(int x, int y) {
         for (var i = x; i <= y; i++) {
-            System.out.println(i);
-            System.out.println("Los numeros entre: " + x + " " + "y" + " " + y + " " + "son: ");
+            System.out.println("Los numeros entre: " + x + " " + "y" + " " + y + " " + "son: " + i);
         }
     }
 }
+

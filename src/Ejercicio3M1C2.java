@@ -6,7 +6,7 @@ public class Ejercicio3M1C2 {
     public static void main(String[] args) {
         var palabrasLista = crearListaStrings(5);
         var variable = concatenarListaStrings(palabrasLista);
-
+        System.out.println(variable + "bota vieja");
     }
 
     static List<String> crearListaStrings(int n) {
@@ -27,7 +27,6 @@ public class Ejercicio3M1C2 {
         for (var palabraString : lista) {
             concatenar += palabraString + " ";
         }
-        System.out.println(concatenar + "bota vieja");
         return concatenar;
     }
 }

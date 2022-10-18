@@ -27,6 +27,4 @@ public class Ejercicio2M1C2 {
             }
         }
     }
-
 }
-

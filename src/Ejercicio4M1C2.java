@@ -77,7 +77,7 @@ public class Ejercicio4M1C2 {
 
     static void imprimirLista(List<Integer> listaInteger) {
         for (var numeroInteger : listaInteger) {
-            System.out.println(numeroInteger + " ");
+            System.out.print(numeroInteger + " ");
         }
     }
 
@@ -86,4 +86,5 @@ public class Ejercicio4M1C2 {
         System.out.println("La longitud de la lista es: " + tamLista);
     }
 }
+
 
